@@ -12,11 +12,8 @@ const BookPage = () => {
 
   return (
     <>
-      <ul className="books">
-        {books.map((book) => (
-          <Book key={book.id} title={book.title} author={book.author} />
-        ))}
-      </ul>
+      {/* rander */}
+      <Book key={books.id} title={books.title} author={books.author} BookList books={books} />
       <Form />
     </>
   );
