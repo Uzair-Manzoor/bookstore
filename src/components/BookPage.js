@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Book from './book';
 import Form from './form';
 
-const BooksPage = () => {
+const BookPage = () => {
   const books = [
     { id: uuidv4(), title: 'The Great Gatsby', author: 'Scott Fitzgerald' },
     { id: uuidv4(), title: 'Moby Dick', author: 'Herman Melville' },
@@ -22,4 +22,4 @@ const BooksPage = () => {
   );
 };
 
-export default BooksPage;
+export default BookPage;
