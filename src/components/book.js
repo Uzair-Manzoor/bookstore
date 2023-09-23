@@ -1,28 +1,20 @@
 import PropTypes from 'prop-types';
 
-const Book = (props) => {
-  const { title, author } = props;
-
-  return (
-    <li>
+const Book = ({ title, author }) => (
+  <li>
+    <p>
+      <span>Book title:</span>
+      {title}
+    </p>
+    <div>
       <p>
-        <span>
-          Book title :
-        </span>
-        {title}
+        <span>Author:</span>
+        {author}
       </p>
-      <div>
-        <p>
-          <span>
-            Author :
-          </span>
-          {author}
-        </p>
-        <button type="button">Remove</button>
-      </div>
-    </li>
-  );
-};
+      <button type="button">Remove</button>
+    </div>
+  </li>
+);
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
