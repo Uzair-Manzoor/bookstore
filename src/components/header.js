@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-
+//import { NavLink } from 'react-router-dom';
+import { BrowserRouter as NavLink } from 'react-router-dom';
 const Header = () => (
   <header>
     <h2>Bookstore CMS</h2>
