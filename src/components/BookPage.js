@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import Book from './book';
+import BookList from './BookList';
 import Form from './form';
 
 const BookPage = () => {
@@ -12,7 +13,7 @@ const BookPage = () => {
 
   return (
     <>
-      {/* rander */}
+      <BookList books={books} />
       <Book key={books.id} title={books.title} author={books.author} BookList books={books} />
       <Form />
     </>
